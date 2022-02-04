@@ -8,12 +8,7 @@ The bedding was hardly able to cover it and seemed ready to slide off any moment
 
 ### _Navigation_
 
-- [Getting started](./KnowledgebaseGettingStarted)
-- [Release notes](./KnowledgebaseReleaseNotes)
-- [Changelog](./KnowledgebaseChangelog)
-- [Installation](./KnowledgebaseInstallation)
-- [Troubleshooting](./KnowledgebaseTroubleshooting)
-- [User](./KnowledgebaseUser)
-- [Developer](./KnowledgebaseDeveloper)
+- [vscode extensions](./StandardsVSCode)
+- [Conventional commits](./StandardsConventionalCommits)
 
 ---

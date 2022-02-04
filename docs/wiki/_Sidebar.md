@@ -1,6 +1,6 @@
 # Wiki content
 
 - [Home](./Home)
-- [Context](./Context)
+- [Standards](./Standards)
 - [Knowledge base](./Knowledgebase)
 - [Known Issues](./KnownIssues)
