@@ -5,6 +5,8 @@ Prerequistes for using wiki on GitHub:
 
 > Wikis are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud and GitHub Enterprise Server. For more information, see "GitHub's products."
 
+> Before starting you need to initiate the wiki.
+
 ## PAT Token
 
 Follow the [github](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) instructions
