@@ -13,6 +13,11 @@ Create a PAT with just enough permissions to push changes to repo
 
 ![repo PAT scope](./docs/media/pat-scope.drawio.png)
 
+## Create secret
+
+The workflow needs a repositpry secret
+![repo PAT scope](./docs/media/repository.drawio.png)
+
 ## Workflow to update
 
 ```yaml
