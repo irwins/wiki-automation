@@ -16,7 +16,7 @@ env:
   wiki_source_repo_dir: '${{ github.repository }}/docs/wiki'
   wiki_target_repo: '${{ github.repository }}.wiki'
   github_commit_message: 'Wiki Sync from docs/wiki'
-  pipelinePrincipalGitUserName: 'pipelinePrincipal'
+  pipelinePrincipalGitUserName: 'noreply'
   pipelinePrincipalGitUserEmail: 'noreply@ict-knowledge.net'
 
 jobs:
@@ -29,14 +29,14 @@ jobs:
         with:
           repository: ${{ env.wiki_source_repo }}
           path: ${{ env.wiki_source_repo }}
-          #token: '${{ secrets.CI_REPO_UPDATE_PAT }}' # Sets general GIT credentials up
+          token: '${{ secrets.WIKI_AUTOMATION_UPDATE_PAT }}' # Sets general GIT credentials up
 
       - name: Checkout Wiki Repo
         uses: actions/checkout@v2
         with:
           repository: ${{ env.wiki_target_repo }}
           path: ${{ env.wiki_target_repo }}
-          #token: '${{ secrets.CI_REPO_UPDATE_PAT }}' # Sets general GIT credentials up
+          token: '${{ secrets.WIKI_AUTOMATION_UPDATE_PAT}}' # Sets general GIT credentials up
 
       - name: Configure Local Git
         run: |
