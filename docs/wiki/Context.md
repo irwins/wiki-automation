@@ -66,7 +66,6 @@ Furthermore we'd then create an orchestration-template the deploys the above res
 
 Then we'd only need to create a parameter file for the orchestration-template and have the workflow deploy both in combination.
 
-
 ### What is the intended deployment flow?
 
 In this section we'll take a deeper look into the fundamental flow from source modules to target environments.
