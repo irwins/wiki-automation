@@ -14,5 +14,5 @@ jobs:
         run: echo Success #exit 1 #echo Success
 
       - name: Reply to issue or pull request
-        if: ${{ always() && steps.checkUserMember.outcome == 'failure' }}
+        if: ${{ steps.checkUserMember.outcome == 'failure' }}
         run: echo "Hello, Thank you for your PR!"
