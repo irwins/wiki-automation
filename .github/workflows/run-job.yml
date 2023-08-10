@@ -1,7 +1,7 @@
 name: Run job if any dependency succeeds
 on:
-  push:
-    branches: [ main ]
+ workflow_dispatch:
+ 
 jobs:
   dep1:
     runs-on: ubuntu-latest
