@@ -11,7 +11,7 @@ jobs:
 
       - name: Check if user is part of sre team
         id: checkUserMember
-        run: echo Success
+        run: exit 1 #echo Success
 
       - name: Reply to issue or pull request
         if: ${{ steps.checkUserMember.outputs.isTeamMember == 'false' }}
