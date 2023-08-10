@@ -1,14 +1,18 @@
-name: Generate random failure
-on: push
+name: Greetings
+
+on:
+    push:
+      branches: [ main ]
+
 jobs:
-  randomly-failing-job:
+  greeting:
     runs-on: ubuntu-latest
     steps:
-      - id: checkout
-        uses: actions/checkout@v3
-      - name: Generate 0 or 1
-        id: generate_number
-        run:  echo "random_number=$(($RANDOM % 2))" >> $GITHUB_OUTPUT
-      - name: Pass or fail
-        run: |
-          if [[ ${{ steps.generate_number.outputs.random_number }} == 0 ]]; then exit 0; else exit 1; fi
+
+      - name: Check if user is part of sre team
+        id: checkUserMember
+        run: echo Success
+
+      - name: Reply to issue or pull request
+        if: ${{ steps.checkUserMember.outputs.isTeamMember == 'false' }}
+        run: echo "Hello, Thank you for your PR!"
